@@ -1,0 +1,106 @@
+<!DOCTYPE html> <!-- informando o  tipo da linguagem-->
+<html lang="pt-br"> <!-- tipo de idiona-->
+<head><!-- tcabeçario-->
+    <meta charset="utf8"/><!--conjunto de caracteres->>> UTF-8( latino) -->
+    <Title>curos em video     </Title> <!-- titulo da pagina-->
+    <link rel= "stylesheet"  href="style_index.css">
+    <link rel= "stylesheet"  href="_css/form.css">
+   
+</head> 
+<!-- inicio de Java scrip-->
+<script scr="_javascript/funcoes.js">
+    function mudaFoto (foto)
+{
+    document.getElementById("icone").src = foto;
+}    
+</script>
+<!-- fim de Java scrip-->
+
+    <body> <!-- corpo-->
+
+<div id="interface">  <!-- cdivisaão da pagina-->
+                                           
+    <header id="cabecalho">            <!-- Inicio do Cabeçario-->                              
+            <hgroup><!-- agrupando os titulos h1 e h2-->
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+
+        <img id="icone" src="_imagens/contato.png"><!-- inserindo imgen usando img SRC -->
+
+        <nav id="menu">
+            <h1>Menu Principal</h1><!-- lista ordenadas para ciação dos link das pg externas -->
+                <ul type="disc">
+                    <li onmousemove="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+                    <li onmousemove="mudaFoto ('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href = "specs.html">Especificações</a></li>
+                    <li onmousemove="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href= "fotos.html">Fotos</a></li>
+                    <li onmousemove="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href= "multimidia.html">Multimídia</a></li>
+                    <li onmousemove="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href ="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+         </nav>
+    </header> <!-- FIM do Cabeçario-->
+
+    <section id="corpo-full">
+        <article id="noticia-principal">
+                    <header id="cabecalho-artigo">
+                        <hgroup>
+                            <h3>Fale Conosco > Contato</h3>
+                            <h1>Formulário de Contato</h1>
+                            <h2>por Gustavo Guanabara</h2>
+                            <h3>Atualizado em 01/Maio/2013</h3>
+                        </hgroup>
+                    </header>
+
+            </article>
+    </section>
+        
+       
+<!-- Formulario-->
+<form>
+    <fieldset>
+        <legend id="usuario">Identificação do Usuário</legend>
+            <p>Nome:<input type="text" name="tNome" id="cNome" size="20" maxlength="30"placeholder="Nome Completo"/> </p>
+            <p>Senha:<input type="password" name="tSenha" id="cSenha" size="8" maxlength="=8" placeholder="8 digitos"/> </p>
+            <p>E-mail:<input type="email" name="tEmail" id="cEmail" sinze="20" maxlength="40" placeholder="digite seu melhor email"/> </p>
+                <fieldset id="sexo"> 
+                        <legend> Sexo:</legend>
+                       <input type="radio" name="tSexo" id="cMas"/>  <label for="cMas">Masculino</label><br/>
+                       <input type="radio" name="tSexo" id="cFem"/> <label for="cFem"> Feminino</label>
+                </fieldset>
+           <p>Data de Nascimento:<input type="date" name="tData" id="cData" sinze="6" maxlength="6" placeholder="Data de hooje"/> </p> 
+    </fieldset>
+
+    <fieldset>
+        <legend id="endereco">Endereço do Usuário</legend>
+            <p>Logradouro: <input type="text" name="trua" id="cRua" size="20" maxlength="50" placeholder="Rua, Av" /> </p>
+            <p>Número: <input type="number" nome="tNumero" id="cNumero"  min="0" max="99999"/>  </p>
+            <p>Cidade: <input type="text" name="tCidade" id="cCidade" size="10" maxlength="50" placeholder="Digita sua Cidade" />  </p>   
+            <p> Estado:<input type="text" name="tEstado" id="cEstado" size="10"maxlength="50" placeholder="Digite seu Estado"  /> </p>          
+            
+    </fieldset>
+
+    <fieldset id="mesagem">
+        <ledend>Mensagem do Usuário</ledend>
+            Grau de Urgência:
+            Mensagem:
+    </fieldset>
+
+    <fieldset id='pedido'>
+        <legend>Quero um Google Glass</legend>
+            Gostaria de adquirir um Google Glass quando disponível
+            Cor:
+            Quantidade:
+            Preço Total: R$
+    </fieldset>
+
+
+    [BOTÃO ENVIAR]
+</form>
+
+
+<footer id="rodape"> <!-- inicido da sessaõ rodape (divisão da pagina)-->
+    <p class="rodapecenter">Copyright 2013 - by Gustavo Guanabara <br>Facebook | Twitter</br></p>
+</footer><!-- FIM da sessaõ rodape (divisão da pagina)-->
+</div>
+</body>
+</html>

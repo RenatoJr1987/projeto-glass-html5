@@ -1,0 +1,42 @@
+<!--(<br/>)  quebra de linha  -->
+<!--(<br/>)  quebra de linha  -->
+<!--(&nbsp;) espaço sem quebra-->
+<!--(wbr/>)  quebra de paralavras-->
+<!--(&shy;) quebra de palavra com " ifen - " -->
+<!--(&lt; é < / &gt; é > &le; é maior igual) simbolos especias - " -->
+<!--(<b> </b>) palavra  em negrito (<i> </i>) - paravra em italico -->
+<!--(<code> </code>) vizualiação de codigo  e deve utilziar a tag <PRE>  tag de pre formatado -->
+<!--Ferramenta GIMP para edição de imagens sempra salva para WEB ( fica menor) semlhante ao photoshop -->
+<!--(width="200/>  tag para diminuir a imgem WIDTH  siguifica largura) -->
+<!--(<figcapiton>XXXXXXXXXX<figcapiton> legenda para imagen) -->
+<!--(href="NOME DO AQUIVO" chama aquivo para dentro  do HTML) -->
+<!--(opacity  esconder a legende  e aparecer  quando passa o mause  deve utilziar tbm (hover figcapiton) ) -->
+
+Navi menu de navegação 
+Ol  lista ordenadas
+UL lista no ordenadas
+target="_blank  Abri outra pagina  abrindo outro aba
+article =artigo
+
+site prefixr   para codigos  sera aceito para todos navegadores
+div possição absoluta
+incluir fonte  externar--> no cabeçario css-->@fonte-face{ fonte-famyli:(nome da fonte para CSS) /  src:url ("local do arquivo:");}
+exxite fonte puplicas ( google.com/fonts)
+
+/* incluind0 fonte do site do google no css (import)*/
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Hentaigana+Akari&display=swap');
+
+semanticas:
+section:definie a area principal
+aside:area definie a area segundaria
+footer:definie a area rodape
+
+<table> tabela
+<capition> titulo da tabela 
+linhas "table rows">>>><tr> celuas  estao tentro da celular <td>
+rowspan=  espanção de celular "apenas para tag <td>"
+colspan= espanção de coluna"apenas para tag <td>"
+tudo que estiver dentro da tag <scrip> é considerado JAVA script</script>
+
+
+converte audiro e  video em  formatos  site---->  mirovideo

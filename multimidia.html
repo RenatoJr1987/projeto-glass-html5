@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- informando o  tipo da linguagem-->
+<html lang="pt-br"> <!-- tipo de idiona-->
+<head><!-- tcabeçario-->
+    <meta charset="utf8"/><!--conjunto de caracteres->>> UTF-8( latino) -->
+    <Title>curos em video     </Title> <!-- titulo da pagina-->
+    <link rel= "stylesheet" type ="text/css" href="style_index.css"/>
+    <link rel= "stylesheet" href="_css/media.css"/>
+   
+</head> 
+<!-- inicio de Java scrip-->
+<script scr="_javascript/funcoes.js">
+    function mudaFoto (foto)
+{
+    document.getElementById("icone").src = foto;
+}    
+</script>
+<!-- fim de Java scrip-->
+
+    <body> <!-- corpo-->
+
+<div id="interface">  <!-- cdivisaão da pagina-->
+                                           
+    <header id="cabecalho">            <!-- Inicio do Cabeçario-->                              
+            <hgroup><!-- agrupando os titulos h1 e h2-->
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+
+        <img id="icone" src="_imagens/multimidia.png"><!-- inserindo imgen usando img SRC -->
+
+        <nav id="menu">
+            <h1>Menu Principal</h1><!-- lista ordenadas para ciação dos link das pg externas -->
+                <ul type="disc">
+                    <li onmousemove="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li>
+                    <li onmousemove="mudaFoto ('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href = "specs.html">Especificações</a></li>
+                    <li onmousemove="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href= "fotos.html">Fotos</a></li>
+                    <li onmousemove="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href= "multimidia.html">Multimídia</a></li>
+                    <li onmousemove="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href ="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+         </nav>
+    </header> <!-- FIM do Cabeçario-->
+
+    <section id="corpo-full">
+        <article id="noticia_principal">
+            <header id="cabecalho-artigo">
+                <hgroup>
+                   <h3> Glass > Multimídia</h3>
+                    <h1>Sons e Vídeos</h1>
+                    <h2>por Gustavo Guanabara</h2>
+                    <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                </hgroup>
+            </header>
+
+                    <div id="tv-radio">
+                            <audio id="musica" controls="controls">
+                                <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+                                Desculpe, mas nao foi possivel carregar o audio
+                            </audio>
+                            <video id="filme" controls="controls" poster="_imagens/video-mini03.jpg">
+                                <source src="_media/getting-started.mp4" type="video/mp4"/>
+                                Desculpa, mas não foi possivel carregar o video
+                            </video>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/q1jxAa32bZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+       
+<footer id="rodape"> <!-- inicido da sessaõ rodape (divisão da pagina)-->
+    <p class="rodapecenter">Copyright 2013 - by Gustavo Guanabara <br>Facebook | Twitter</br></p>
+</footer><!-- FIM da sessaõ rodape (divisão da pagina)-->
+</div>
+</body>
+</html>

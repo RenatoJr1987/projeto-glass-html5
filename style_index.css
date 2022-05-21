@@ -1,0 +1,236 @@
+@charset "utf8";/*fonte  portugues no css*/
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Hentaigana+Akari&display=swap');/* incluind fonte do site do google no css (import)*/
+
+/*formatação da cor de fundo e  dos paragrafos  */
+body{
+    background: rgb(112, 109, 109);
+    font-family: Arial, sans-serif;
+}
+
+div#interface {/*formatação da Pagina  tudo que esta dentro da DIV (relativo dentro do contanier)  */
+    width:900px ;/*tanho do conteudo dentro da DIV  */
+    background-color: white;/*cor do fundo  dentro da DIV  */
+    margin: -25px auto 10px auto;/*margindo do div cima10px direita10px baixo10px esquerda10px  */
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);/*sobra da caixa Div  */
+    padding: 10px ;/*margem do contetudo  */
+}
+
+p{
+    text-align:  justify; /*paragrafo*/
+    text-indent: 50px;
+}
+
+a:hover{
+    text-decoration-color: underline red
+}
+ header#cabecalho img#icone{/*direcionamento da imagem do oculos*/
+     position: absolute;
+     left: 900px;
+     top: 45px;
+ } 
+ header#cabecalho/*configuração do headr cabeçalho*/{
+    border-bottom: 1px #606060 solid;/*criando linha do cabeççario largura, cor, formato* HORIZOLTAL*/
+    height: 150px;/*altura da lina em reação a borda*/
+    background: url("_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;/*inserindo imagem  com o css para nao repetir a imagem deve utilziar  "no-repeat"*/
+ }
+
+ header#cabecalho h1{/*formanto  o cabeçalho "google glss"*/
+     font-family: 'Yuji Hentaigana Akari';/*incluindo fonte do site do google/fonts"*/
+     font-size: 30pt;/*tamanho"*/
+     color: #606060;/*cor"*/
+     text-shadow: 1px 1px 1px rgba(0,0,0,.6);/*sobra"*/
+     padding: 0px;/*distancia entre o  h1 e h2*/
+     margin-bottom: 0px;/*distancia entre o  h1 e h2*/
+ }
+
+ header#cabecalho h2{/*A revolução do Google está chegando*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;/*tamanho"*/
+    color: #888888;/*cor"*/
+    padding: 20px;/*distancia entre o  h2 e h1*/
+    margin-top: 0px;/*distancia entre o  h2 e h1*/
+
+ }
+
+/*formatação de magens com referencia */
+
+figure.foto-legenda{/*borda da foto */
+    position: relative; /*possição da legenda  */
+    border: 8px solid white;/*borda da foto */
+    box-shadow: 1px 1px 6px black;/*sobra da foto*/
+}
+
+figure.foto-legenda{/*tamanho da foto aula 10*/
+    width: 80%; /*largura */
+    height: 70%; /*altura */  
+}
+
+figure.foto-legenda figcaption{/*posição da imagem dentro da sobra */
+   opacity: 0;
+   position: absolute;
+   top: 0px;
+   /*cor da legenda pa sobra na imagem*/
+   background-color: rgba(0,0,0,.4);
+   color: white;
+   width: 100%;
+   height: 100%;
+   padding: 10px;/*espassamento da legenda  sobra na imagem*/
+   box-sizing: border-box;
+      }
+
+   figure.foto-legenda:hover figcaption{
+       opacity: 1;/* mostrar a legenda na foto*/
+       transition: opacity 1s;/*tempo para aparece a legenda na foto*/
+   }
+   .foto-legenda1 {/* tamanho da foto*/
+    max-height: 320px;
+    max-width: 320px;
+}
+   /*formatação do meu flutante*/
+   nav#menu{
+       display: block; /*colcoando o meu no topo  veririfcar clase UL  ( possition, top e left)*/
+       
+   }
+   nav#menu ul{ /*formatação tudo que for UL*/
+    list-style: none;/*excclui os marcadores º*/
+    text-transform: uppercase;/*letras em maiusculas*/
+    position: absolute;/*possição do meu*/
+    top: -20px; /*possição do meu*/
+    left: 400px; /*possição do meu*/
+    
+    }
+
+    nav#menu li { /*formatação tudo que for il para deixar lado a lado */
+    display: inline-block; /* itens lado a lado */
+    background-color: #dddddd;/* cor de fundo  */
+    margin: 2px;/* espaço fora do objeto  */
+    padding: 10px;/* espaço dentro do objeto*/
+    transition: background-color 1s; /*tempo de  aparecer  o efeito do houver ( mouse passando) */
+        }
+
+    nav#menu li:hover /*hover utilziado para mudar o efeito  quando passar o mouse */{
+    background-color: rgb(51, 46, 46);
+     }
+
+   nav#menu h1 /*oculta o menu principal  da pagina mas mantem no codigo*/{
+    display:none;
+      }
+
+   nav#menu a {/*editando  aparencia do  menu quando o mouse passa*/
+    color: #000000;/*cor do menu*/
+    text-decoration: none; /*tirando o sublinhado*/
+}
+
+    nav#menu a:hover {/*editando  aparencia do  menu quando o mouse passa*/
+    color: white;
+    text-decoration: underline;
+    
+}
+/*criando a divisão da pagina REVER AULA 17 e 18 */ 
+
+section#corpo
+{/*editando a quebra da pagina corpo principal*/
+    display: block;
+    width: 400px;
+    float: left;/*colcoando para o lado esquedo da pagina*/
+    border-right:1px solid #606060 ;/*ciando borda vertical  lado direito do corpo princial( largura, tipo da linha, cor da linha*/
+    padding-right:15px;/*configurando margin do texto para divisão da pagina*/
+}
+
+article#noticia_principal h2{/*formatando tudo q esta dentro do article H2*/
+font-size: 12pt;
+color: #1a1818;
+background: #8d8c8c;
+padding: 5px 0px 5px 10px;
+margin: 10px 0px 10px 0px;
+}
+/*formatando tudo  no hgroup */
+header#cabecalho-artigo h1{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20pt;
+color: #1a1818;
+margin-bottom: 0px;
+}
+header#cabecalho-artigo h2{
+font-size: 13pt;
+color: #524f4f;
+background-color: #ffffff ;
+margin: 0px;
+
+}
+
+header#cabecalho-artigo h3{
+font-size: 12pt;
+color: #0b0bbd;
+}
+.direita{
+text-align: right;
+font-size: 5pt;
+}
+
+table#tabela/*borda da tabela*/{
+border: 1px solid #606060;
+border-spacing: 0px;/*espaço entre as celulas*/
+margin-left: auto;/*espaço entre as celulas*/
+margin-right: auto;/*espaço entre as celulas*/
+
+}
+
+table#tabela td{/*borda de cada celula*/
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+}
+/*clase para formatar as tabela*/
+.ce{
+color: white;
+background: #606060;
+vertical-align: top;
+}
+
+.cd{
+    background: #464545;
+}
+
+.cp{
+    color:#606060;
+    font-size: 12pt;
+    font-weight: bolder;
+
+}
+
+table#tabela caption span{
+display:block ;
+float: right;
+color: black;
+font-size: 8pt;
+margin-top: 10px;
+}
+
+aside#lateral{/*editando a quebra da pagina corpo secundario*/
+    display: block;
+    width: 470px;
+    float: right;
+  
+}
+aside#lateral h1 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20pt;
+color: #0b0bbd;
+}
+
+aside#lateral h2 {
+    background-color: #524f4f;
+    font-size: 15pt;
+    color: white;
+    padding: 5px;
+}
+
+footer#rodape{/*editando a quebra da pagina rodape*/
+    clear: both;
+    border-top: 1px solid #606060;/*ciando borda horizontal no TOP do rodape ( largura, tipo da linha, cor da linha*/
+   
+}
+.rodapecenter{
+    text-align: center;
+}
